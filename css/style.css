@@ -1,85 +1,134 @@
 body{
    /* Set line spacing */
+   line-height: 1.5;
+   margin: 20px;
 }
 
 
 header, nav{
     /* Set padding and margin */
-
+    padding: 5px 10px 20px 15px;
+    margin: 10px;
 }
+
 nav ul li{
     /* Set display, margin, padding, font-size, background-color */
-
+    display: inline-block;
+    margin: 50px;
+    padding: 30px;
+    background-color: beige;
+    font-size: x-large;
 }
 
 nav a{
     /* Set text decoration*/
+    text-decoration: none;
 }
 
 a:visited{
     /* Set color */
-
+    color: black;
 }
 
 nav a.current{
     /* Set text decoration, transformation, and underline properties */
+    text-decoration-style: wavy;
+    text-decoration-line:underline;
+    text-transform: uppercase;
+    font-size: x-large;
 }
 
 
 h1{
    /*Set font and font size*/
-
+   font-family: Merriweather, Anton, "Times New Roman", Times;
+   font-size: 50px;
 }
 
 h2{
     /*Set font, font size, and alignment*/
+    font-family: Anton, "Times New Roman", Times;
+    font-size: xx-large;
+    text-align: center;
 }
 
 h3{
     /*Set font size*/
-
+    font-size: x-large;
 }
 
 h1, h2, h3{
     /*Set margin */
-
+    margin-top: 10px;
 }
 .grid{
     /*Set width, margin, border properties, background color, and grid properties */
+    /* grid container */
+    display: grid;
+    width: 90%;
+    grid-template-rows: max-content;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    row-gap: 10px; 
+    margin: auto;
+    border-radius: 5%;
+    background-color: lightgrey;
+    /* space horizontally? */
 }
 
 .grid div{
-    /* Set border properties, padding, and background color */
-
+    /*Set border properties, padding, and background color */
+    display: grid;
+    margin: auto;
+    margin-top: 0;
+    padding: 30px;
+    border-radius: 5%;
+    border: 1px solid black;
+    background-color: white;
 }
 
 .grid img{
     /* Set width, margin, and display */
+    display: grid;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    /* dif between align-items and justify-items? */
 }
 
 
 .grid div:nth-child(3n+1)  {
     /* Set box shadow */
+    box-shadow: 10px 0 #8888;
     }
 
 .grid div:nth-child(3n)  {
     /* Set box shadow */ 
+    box-shadow: -10px 0 #8888;
 }
 
 .grid div:nth-child(3n+2)  {
      /* Set box shadow */
+     box-shadow: 10px 0 #8888, -10px 0 #8888;
 }
     
 
 p + p {
      /* Set indentation */
+     text-indent: 30px;
   }
   
 p{
      /* Set margin */
+     margin: 10px 0px;  
+     /* top and bottom 10px, left right 0px */
 }
 
 
 .grid ul li{
     /* Set margin, line-spacing, list styling  */
+    line-height: 1;
+    margin: 0px 0px 5px 30px; 
+    list-style-image: url('/Users/annechang/umich/course/SI539/hw/hw3-2023/images/sketchbook.png');
 }
