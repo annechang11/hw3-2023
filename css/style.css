@@ -131,5 +131,5 @@ p{
     /* Set margin, line-spacing, list styling  */
     line-height: 1;
     margin: 0px 0px 5px 30px; 
-    list-style-image: url('/images/sketchbook.png');
+    list-style-image: url('../images/sketchbook.png');
 }
